@@ -1,0 +1,133 @@
+
+.form-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    border: 4px solid #dddede;
+    border-radius: 15px;
+
+    .form-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 0.875rem;
+        color: var(--light-grey);
+
+        img {
+            height: 30px;
+        }
+    }
+
+    h3 {
+        font-size: 1.55rem;
+        color: #888888;
+        font-weight: 300;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .form-radio {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px 5px;
+        border-top: 1px solid #dddede;
+        color: #888888;
+
+       &:nth-last-child(3) {
+        border-bottom: 1px solid #dddede;
+       } 
+
+       input {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+       }
+
+        span {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .form-checkbox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        color: var(--light-grey);
+        margin: 35px 0px;
+        gap: 12px;
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+
+        span {
+            strong {
+                color: var(--dark-grey);
+                font-weight: bold;
+                font-size: 1.30rem;
+            }
+        }
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+        align-items: center;
+
+        .btn {
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            border-radius: 5px;
+            color: var(--dark-grey);
+            font-weight: 600;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--yellow);
+        }
+
+        .btn-secondy {
+            background-color: transparent;
+            border: 2px solid #dddede;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        .btn-wrapper {
+            flex-direction: row;
+
+            .btn {
+                width: 25%;
+            }
+        }
+
+        .form-checkbox {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+}
