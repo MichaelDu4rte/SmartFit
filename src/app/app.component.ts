@@ -9,12 +9,13 @@ import { BehaviorSubject } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { Location } from './types/location.interface';
 import { LegendComponent } from './components/legend/legend.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FormsComponent, LegendComponent, CardsComponent,HttpClientModule, CommonModule],
+  imports: [RouterOutlet, HeaderComponent, FormsComponent, LegendComponent, CardsComponent, FooterComponent,HttpClientModule, CommonModule],
   providers: [FindUnitService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -1,0 +1,22 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 100vw;
+    text-align: center;
+    padding: 35px;
+    background: var(--dark-grey);
+
+    img {
+
+        height: 50px;
+    }
+  
+    p {
+        color: var(--light-grey);
+    }
+}
+
