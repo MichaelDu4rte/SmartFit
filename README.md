@@ -6,9 +6,10 @@
 ![preview](https://i.imgur.com/QAY7YAP.png)
 
 # Proposta de Teste
-> A Smart Fit, por atuar no segmento de fitness, passou por várias mudanças na pandemia. Foi necessário desenvolver uma página para buscar unidades **fechadas** ou **abertas** para consulta e reserva.
+> A Smart Fit, por atuar no segmento de fitness, passou por várias mudanças na pandemia. Foi necessário desenvolver uma página para buscar unidades **fechadas** ou **abertas** para consulta e reserva. Tendo isso em vista, a ideia desse projeto é justamente fazer essa implemntação.
 
-> Nesse teste, foi implementado as funcionalidades descritas abaixos.
+
+> Nesse projeto, foi implementado as funcionalidades descritas abaixos.
 
 ### Funcionalidades
 - Integração das unidades através do arquivo json `https://test-frontend-developer.s3.amazonaws.com/data/locations.json` com method `GET`
